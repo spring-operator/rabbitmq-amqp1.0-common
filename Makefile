@@ -9,7 +9,7 @@ define PROJECT_APP_EXTRA_KEYS
 	  ]},
 	{licenses, ["MPL 1.1"]},
 	{links, [
-	    {"Website", "http://www.rabbitmq.com/"},
+	    {"Website", "https://www.rabbitmq.com/"},
 	    {"GitHub", "https://github.com/rabbitmq/rabbitmq-amqp1.0-common"}
 	  ]},
 	{build_tools, ["make", "rebar3"]},

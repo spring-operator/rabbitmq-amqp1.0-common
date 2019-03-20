@@ -113,7 +113,7 @@ list(_Config) ->
                       {array, int, [{int, 1}, {int, 2}, {int, 3}]},
                       {described,
                        {utf8, <<"URL">>},
-                       {utf8, <<"http://example.org/hello-world">>}}
+                       {utf8, <<"https://example.org/hello-world">>}}
                      ]}),
     ok.
 
@@ -129,7 +129,7 @@ map(_Config) ->
 described(_Config) ->
     roundtrip({described,
                {utf8, <<"URL">>},
-               {utf8, <<"http://example.org/hello-world">>}}),
+               {utf8, <<"https://example.org/hello-world">>}}),
     ok.
 
 array(_Config) ->
@@ -155,7 +155,7 @@ array(_Config) ->
 
     Desc = {utf8, <<"URL">>},
     roundtrip({array, {described, Desc, utf8},
-               [{described, Desc, {utf8, <<"http://example.org/hello">>}}]}),
+               [{described, Desc, {utf8, <<"https://example.org/hello">>}}]}),
     roundtrip({array, {described, Desc, utf8}, []}),
     ok.
 
